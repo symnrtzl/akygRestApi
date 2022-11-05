@@ -41,9 +41,8 @@ class KitapYazari(Resource):
         return {'message': 'No entry found with this name !'}, 404
 
 
-# Add URL endpoints
-api.add_resource(KitapAdi, '/kitapadi')
 
+api.add_resource(KitapAdi, '/kitapadi')
 api.add_resource(KitapYazari, '/<string:KitapYazari>')
 
 if __name__ == '__main__':
